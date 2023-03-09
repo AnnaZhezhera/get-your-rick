@@ -13,7 +13,7 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="character/:id" element={<HeroDetails />} />
-          <Route path="*" element={<Home />} /> setSearchQuery(movieName);
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </AppWrapp>
