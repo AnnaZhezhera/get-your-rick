@@ -1,5 +1,5 @@
-import { Route, Routes, useNavigate } from 'react-router-dom';
-import React, { lazy, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import React, { lazy } from 'react';
 import { Layout } from './Layout/Layout';
 import { AppWrapp } from './App.styled';
 
@@ -12,7 +12,7 @@ export const App = () => {
     <AppWrapp>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index path="/" element={<Home user={user} />} />
+          <Route index path="/" element={<Home />} />
           <Route path="character/:id" element={<HeroDetails />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
