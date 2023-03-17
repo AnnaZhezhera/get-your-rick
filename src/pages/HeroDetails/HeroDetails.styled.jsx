@@ -31,6 +31,7 @@ export const GoBackLink = styled(NavLink)`
   text-decoration: none;
   color: black;
 
+  margin-top: 23px;
   margin-bottom: 32px;
 
   &:hover {
