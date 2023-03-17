@@ -22,7 +22,7 @@ import {
 } from './Home.styled';
 import logo from '../../images/logo.png';
 
-const Home = ({ user }) => {
+const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [currentHeroes, setCurrentHeroes] = useState([]);
